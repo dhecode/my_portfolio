@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)https://reactjsexample.com/amazon-clone-with-react-and-firebase-2/ -->
+<html lang="en" style="transform: none;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amazon Clone with React and Firebase</title>
+<link rel="stylesheet" href="./11_files/screen.css">
+<link rel="shortcut icon" href="https://reactjsexample.com/favicon.png" type="image/png">
+<link rel="canonical" href="https://reactjsexample.com/amazon-clone-with-react-and-firebase-2/">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<link rel="amphtml" href="https://reactjsexample.com/amazon-clone-with-react-and-firebase-2/amp/">
+<meta property="og:site_name" content="React.js Examples">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Amazon Clone with React and Firebase">
+<meta property="og:description" content="Amazon Clone with React and Firebase">
+<meta property="og:url" content="https://reactjsexample.com/amazon-clone-with-react-and-firebase-2/">
+<meta property="og:image" content="https://reactjsexample.com/content/images/2022/07/Code-2022-21-41-48.jpg">
+<meta property="article:published_time" content="2022-07-22T00:46:00.000Z">
+<meta property="article:modified_time" content="2022-07-22T00:46:00.000Z">
+<meta property="article:tag" content="Amazon">
+<meta property="article:tag" content="Firebase">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Amazon Clone with React and Firebase">
+<meta name="twitter:description" content="Amazon Clone with React and Firebase">
+<meta name="twitter:url" content="https://reactjsexample.com/amazon-clone-with-react-and-firebase-2/">
+<meta name="twitter:image" content="https://reactjsexample.com/content/images/2022/07/Code-2022-21-41-48.jpg">
+<meta name="twitter:label1" content="Written by">
+<meta name="twitter:data1" content="React">
+<meta name="twitter:label2" content="Filed under">
+<meta name="twitter:data2" content="Amazon, Firebase">
+<meta property="og:image:width" content="754">
+<meta property="og:image:height" content="467">
+<script type="text/javascript" async="" src="./11_files/analytics.js.download"></script><script type="text/javascript" async="" src="./11_files/js"></script><script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "React.js Examples",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://reactjsexample.com/content/images/2018/01/reactjsexample.png",
+            "width": 259,
+            "height": 55
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "React",
+        "image": {
+            "@type": "ImageObject",
+            "url": "//www.gravatar.com/avatar/1f87c1c5e9ccda422d03821987e2cbe5?s=250&d=mm&r=x",
+            "width": 250,
+            "height": 250
+        },
+        "url": "https://reactjsexample.com/author/react/",
+        "sameAs": []
+    },
+    "headline": "Amazon Clone with React and Firebase",
+    "url": "https://reactjsexample.com/amazon-clone-with-react-and-firebase-2/",
+    "datePublished": "2022-07-22T00:46:00.000Z",
+    "dateModified": "2022-07-22T00:46:00.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://reactjsexample.com/content/images/2022/07/Code-2022-21-41-48.jpg",
+        "width": 754,
+        "height": 467
+    },
+    "keywords": "Amazon, Firebase",
+    "description": "Amazon Clone with React and Firebase",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://reactjsexample.com/"
+    }
+}
+    </script>
+<script src="./11_files/ghost-sdk.min.js.download"></script>
+<script>
+ghost.init({
+	clientId: "ghost-frontend",
+	clientSecret: "1d7f6785c5cb"
+});
+</script>
+<meta name="generator" content="Ghost 1.26">
+<link rel="alternate" type="application/rss+xml" title="React.js Examples" href="https://reactjsexample.com/rss/">
+
+<script async="" src="./11_files/js(1)"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-82839383-1');
+</script>
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5680150941998747" crossorigin="anonymous"></script>
+<link href="./11_files/isso.css" id="isso-style" rel="stylesheet" type="text/css"><style>.theiaStickySidebar:after {content: ""; display: table; clear: both;}</style></head>
+<body class="post-template tag-amazon tag-firebase" style="transform: none;">
+<nav id="navbar" class="navbar is-fixed-top is-transparent" style="
+        transform: translateY(0px);
+      ">
+<div id="specialShadow" class="bd-special-shadow" style="opacity: 1; transform: scaleY(1);"></div>
+<div class="container">
+<div class="navbar-brand">
+<a class="navbar-item" href="https://reactjsexample.com/">
+<img src="./11_files/favicon.png" alt=" React.js Examples" width="38" height="38">
+</a>
+<a class="navbar-item " href="https://reactjsexample.com/">
+React.js Examples
+</a>
+<div id="navbarBurger" class="navbar-burger burger" data-target="navMenuIndex">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<div id="navMenuIndex" class="navbar-menu">
+<div class="navbar-start">
+<div class="navbar-item has-dropdown is-hoverable">
+<a class="navbar-link  " href="https://reactjsexample.com/tag/ui/">
+Ui
+</a>
+<div class="navbar-dropdown is-boxed">
+<a class="navbar-item " href="https://reactjsexample.com/tag/templates/">Templates</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/material-design/">Material design</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/list/">List</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/cards/">Cards</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/infinite-scroll/">Infinite Scroll</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/bootstrap/">Bootstrap</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/table/">Table</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/layout/">Layout</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/scroll/">Scroll</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/single-page/">Single Page</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/responsive/">Responsive</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/style/">Style</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/admin-template/">Admin Templates</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/ui/">All UI</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+<a class="navbar-link  " href="https://reactjsexample.com/amazon-clone-with-react-and-firebase-2/#">
+Media
+</a>
+<div class="navbar-dropdown is-boxed">
+<a class="navbar-item " href="https://reactjsexample.com/tag/slides/">Slides</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/slider/">Slider</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/chart/">Chart</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/lightbox/">Lightbox</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/video/">Video</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/gallery/">Gallery</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/carousel/">Carousel</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/images/">Images</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/player/">Player</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/audio/">Audio</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/music/">Music</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/movies/">Movies</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/maps/">Maps</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+<a class="navbar-link  " href="https://reactjsexample.com/amazon-clone-with-react-and-firebase-2/#">
+Elements
+</a>
+<div class="navbar-dropdown is-boxed">
+<a class="navbar-item " href="https://reactjsexample.com/tag/calculator/">Calculator</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/drag/">Drag</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/tooltip/">Tooltip</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/notifications/">Notifications</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/pagination/">Pagination</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/toggle/">Toggle</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/icons/">Icons</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/emoji/">Emoji</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/progress/">Progress</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/loading/">Loading</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/svg/">Svg</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/accordion/">Accordion</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/modals/">Modals</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/popup/">Popup</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/dialogs/">Dialogs</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/color/">Color </a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/clock/">Clock</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/avatar/">Avatar</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/circular/">Circular</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/sticky/">Sticky</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+<a class="navbar-link  " href="https://reactjsexample.com/tag/input/">
+Input
+</a>
+<div class="navbar-dropdown is-boxed">
+<a class="navbar-item " href="https://reactjsexample.com/tag/calendar/">Calendar</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/form/">Form</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/select/">Select</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/date/">Date</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/typography/">Typography</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/textarea/">Textarea</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/message/">Message</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/upload/">Upload</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/notes/">Notes</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/text/">Text</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/search/">Search</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/data/">Data</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/editor/">Editor</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/autocomplete/">Autocomplete</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/inbox/">Inbox</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/time/">Time</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/markdown/">Markdown</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/input/">Input</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+<a class="navbar-link  " href="https://reactjsexample.com/tag/menu/">
+Menu
+</a>
+<div class="navbar-dropdown is-boxed">
+<a class="navbar-item " href="https://reactjsexample.com/tag/dropdown/">Dropdown</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/navbar/">Navbar</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/navigator/">Navigator</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/swipe/">Swipe</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/tabbar/">Tabbar</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/sidebar/">Sidebar</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/intro/">Intro</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/button/">Button</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/tabs/">Tabs</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/drag-drop/">Drag/Drop</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/dock/">Dock</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/fixed/">Fixed</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/tree/">Tree</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/menu/">Menu</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+<a class="navbar-link  " href="https://reactjsexample.com/amazon-clone-with-react-and-firebase-2/#">
+More
+</a>
+<div class="navbar-dropdown is-boxed">
+<a class="navbar-item " href="https://reactjsexample.com/tag/animation/">Animation</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/games/">Games</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/mobile/">Mobile</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/todo/">Todo</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/vote/">Vote</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/sortable/">Sortable</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/weather/">Weather</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/resizable/">Resizable</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/skillbars/">Skillbars</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/framework/">Framework</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/miscellaneous/">Miscellaneous</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/books/">Books</a>
+<a class="navbar-item " href="https://reactjsexample.com/tag/overlay/">Overlay</a>
+</div>
+</div>
+</div>
+<div class="navbar-end">
+<div class="gxx_search" id="bdcs">
+<form action="https://www.google.com/search" method="get" target="_blank">
+<input type="search" name="q" value="" placeholder="Search">
+<input type="hidden" name="ie" value="UTF-8">
+<input type="hidden" name="oe" value="UTF-8">
+<input type="hidden" name="hl" value="en">
+<input type="hidden" name="domains" value="reactjsexample.com">
+<input type="hidden" name="sitesearch" value="reactjsexample.com">
+<input type="submit" class="gxxicon" value="">
+</form>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<section class="ggcontent hidden-xs">
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5680150941998747" crossorigin="anonymous"></script>
+
+<ins class="adsbygoogle" style="display:inline-block;width:1130px;height:250px" data-ad-client="ca-pub-5680150941998747" data-ad-slot="3755220091"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</section>
+<div class="site" style="transform: none;">
+<div class="site-content" style="transform: none;">
+<div class="container" style="transform: none;">
+<div class="row" style="transform: none;">
+<div class="content-column col-xl-9 col-lg-8">
+<div class="content-area">
+<main class="site-main">
+<article class="post tag-amazon tag-firebase single u-shadow">
+<header class="post-header">
+<a class="post-tag" href="https://reactjsexample.com/tag/amazon/">Amazon</a>
+<h1 class="post-title">
+Amazon Clone with React and Firebase
+</h1>
+</header> <div class="post-meta">
+<time class="post-meta-date" datetime="2022-07-22">
+Jul 22, 2022
+</time>
+<span class="post-meta-length">1 min read</span>
+</div>
+<div class="post-media2">
+<div class="u-placeholder">
+<a class="post-image-link" href="https://reactjsexample.com/amazon-clone-with-react-and-firebase-2/">
+<img class="post-image lazyautosizes lazyloaded" data-srcset="/content/images/2022/07/Code-2022-21-41-48.jpg 400w, /content/images/2022/07/Code-2022-21-41-48.jpg 750w, /content/images/2022/07/Code-2022-21-41-48.jpg 960w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-sizes="auto" alt="Amazon Clone with React and Firebase" sizes="700px" srcset="/content/images/2022/07/Code-2022-21-41-48.jpg 400w, /content/images/2022/07/Code-2022-21-41-48.jpg 750w, /content/images/2022/07/Code-2022-21-41-48.jpg 960w">
+</a>
+</div>
+</div>
+<div class="content-wrapper">
+<div class="post-content u-text-format">
+<h1>Amazon Clone with React and Firebase</h1>
+<p>Output Video</p>
+<details open="" class="details-reset border rounded-2">
+<summary class="px-3 py-2">
+<p> <span aria-label="Video description Amazon-clone-Output.mp4" class="m-1">Amazon-clone-Output.mp4</span>
+<span class="dropdown-caret"></span>
+</p></summary>
+<p> <video src="https://user-images.githubusercontent.com/76683360/179952396-61517d4a-d135-4b91-a5be-85593277f61d.mp4" data-canonical-src="https://user-images.githubusercontent.com/76683360/179952396-61517d4a-d135-4b91-a5be-85593277f61d.mp4" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-width:100%"></video></p>
+<p> 
+</p></details>
+<p>Output screenshots</p>
+<p><a target="_blank" rel="noopener" href="./11_files/179951836-e0fb34a1-e67b-4a6c-bb38-7c7148a8d34c.jpeg"><img src="./11_files/179951836-e0fb34a1-e67b-4a6c-bb38-7c7148a8d34c.jpeg" alt="A1" style="max-width: 100%"></a></p>
+<p><a target="_blank" rel="noopener" href="./11_files/179951814-c553fef0-6d4f-4bc9-9cab-dc0a9f0c5630.jpeg"><img src="./11_files/179951814-c553fef0-6d4f-4bc9-9cab-dc0a9f0c5630.jpeg" alt="A2" style="max-width: 100%"></a></p>
+<p><a target="_blank" rel="noopener" href="./11_files/179951825-3bf0eb43-aae1-448b-a76c-d9d4f4fae697.jpeg"><img src="./11_files/179951825-3bf0eb43-aae1-448b-a76c-d9d4f4fae697.jpeg" alt="A3" style="max-width: 100%"></a></p>
+<p><a target="_blank" rel="noopener" href="./11_files/179951828-b1b76884-e9bf-4cb6-8e42-4e8215db9e6d.jpeg"><img src="./11_files/179951828-b1b76884-e9bf-4cb6-8e42-4e8215db9e6d.jpeg" alt="A4" style="max-width: 100%"></a></p>
+<p><a target="_blank" rel="noopener" href="./11_files/179951832-bf9677b9-348f-40a0-981e-b10e1a897957.jpeg"><img src="./11_files/179951832-bf9677b9-348f-40a0-981e-b10e1a897957.jpeg" alt="A5" style="max-width: 100%"></a></p>
+<p>To run cloud function on localhost —&gt; firebase serve –only functions</p>
+<h2>GitHub</h2>
+<p><a class="github-view" href="https://github.com/khansalikaziz/Amazon-clone-using-React-and-Firebase?ref=reactjsexample.com" target="_blank" rel="noopener">View Github</a></p>
+<section id="isso-thread"><h4 class="isso-thread-heading">One Comment</h4><div class="isso-postbox"><div class="isso-form-wrapper"><div class="isso-textarea-wrapper"><textarea class="isso-textarea" rows="5" minlength="3" maxlength="65535" placeholder="Type Comment Here (at least 3 chars)"></textarea><div class="isso-preview"><div class="isso-comment"><div class="isso-text-wrapper"><div class="isso-text"></div></div></div></div></div><section class="isso-auth-section"><p class="isso-input-wrapper"><label for="isso-postbox-author">Name (optional)</label><input id="isso-postbox-author" type="text" name="author" placeholder="John Doe" value=""></p><p class="isso-input-wrapper"><label for="isso-postbox-email">E-mail (optional)</label><input id="isso-postbox-email" type="email" name="email" placeholder="johndoe@example.com" value=""></p><p class="isso-input-wrapper"><label for="isso-postbox-website">Website (optional)</label><input id="isso-postbox-website" type="text" name="website" placeholder="https://example.com" value=""></p><p class="isso-post-action"><input type="submit" value="Submit"></p><p class="isso-post-action"><input type="button" name="preview" value="Preview"></p><p class="isso-post-action"><input type="button" name="edit" value="Edit"></p></section><section class="isso-notification-section" style="display: none;"><label><input type="checkbox" name="notification">Subscribe to email notification of replies</label></section></div></div><div id="isso-root"><div class="isso-comment isso-no-votes" id="isso-406" data-hash="6bd2c825927d"><div class="isso-avatar"><img src="./11_files/2e1faa76f1643241323a4bbd1135fd83"></div><div class="isso-text-wrapper"><div class="isso-comment-header" role="meta"><span class="isso-author">Ramu</span><span class="isso-spacer">•</span><a class="isso-permalink" href="https://reactjsexample.com/amazon-clone-with-react-and-firebase-2/#isso-406"><time title="Sat Aug 06 2022 09:28:29 GMT+0530 (India Standard Time)" datetime="2022-08-06T03:58:29Z">last year</time></a><span class="isso-note"></span></div><div class="isso-text"><p>how to add a new product in this.</p></div><div class="isso-comment-footer"><span class="isso-votes">0</span><a class="isso-upvote" href="https://reactjsexample.com/amazon-clone-with-react-and-firebase-2/#"><!-- Generator: IcoMoon.io --><svg width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="gray">
+  <g>
+    <path d="M 24.773,18.299c-0.651-0.669-7.512-7.203-7.512-7.203C 16.912,10.739, 16.456,10.56, 16,10.56c-0.458,0-0.914,0.179-1.261,0.536 c0,0-6.861,6.534-7.514,7.203c-0.651,0.669-0.696,1.872,0,2.586c 0.698,0.712, 1.669,0.77, 2.522,0L 16,14.89l 6.251,5.995 c 0.854,0.77, 1.827,0.712, 2.522,0C 25.47,20.17, 25.427,18.966, 24.773,18.299z">
+    </path>
+  </g>
+</svg>
+</a><span class="isso-spacer">|</span><a class="isso-downvote" href="https://reactjsexample.com/amazon-clone-with-react-and-firebase-2/#"><!-- Generator: IcoMoon.io --><svg width="16" height="16" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="gray">
+  <g>
+    <path d="M 24.773,13.701c-0.651,0.669-7.512,7.205-7.512,7.205C 16.912,21.262, 16.456,21.44, 16,21.44c-0.458,0-0.914-0.178-1.261-0.534 c0,0-6.861-6.536-7.514-7.205c-0.651-0.669-0.696-1.87,0-2.586c 0.698-0.714, 1.669-0.77, 2.522,0L 16,17.112l 6.251-5.995 c 0.854-0.77, 1.827-0.714, 2.522,0C 25.47,11.83, 25.427,13.034, 24.773,13.701z">
+    </path>
+  </g>
+</svg>
+</a><a class="isso-reply" href="https://reactjsexample.com/amazon-clone-with-react-and-firebase-2/#">Reply</a></div></div><div class="isso-follow-up"></div></div></div></section>
+</div>
+<div class="post-tags">
+<a class="tag tag-amazon" href="https://reactjsexample.com/tag/amazon/" title="Amazon">Amazon</a><a class="tag tag-firebase" href="https://reactjsexample.com/tag/firebase/" title="Firebase">Firebase</a>
+</div>
+<div class="share u-hover-wrapper">
+<a class="share-item share-facebook u-hover-item" href="https://www.facebook.com/sharer.php?u=https://reactjsexample.com/amazon-clone-with-react-and-firebase-2/" target="_blank" rel="noopener"><i class="icon icon-facebook"></i></a>
+<a class="share-item share-twitter u-hover-item" href="https://twitter.com/intent/tweet?url=https://reactjsexample.com/amazon-clone-with-react-and-firebase-2/&amp;text=Amazon%20Clone%20with%20React%20and%20Firebase" target="_blank" rel="noopener"><i class="icon icon-twitter"></i></a>
+<a class="share-item share-pinterest u-hover-item" href="https://pinterest.com/pin/create/button/?url=https://reactjsexample.com/amazon-clone-with-react-and-firebase-2/&amp;media=&amp;description=Amazon%20Clone%20with%20React%20and%20Firebase" target="_blank" rel="noopener"><i class="icon icon-pinterest"></i></a>
+<a class="share-item share-linkedin u-hover-item" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://reactjsexample.com/amazon-clone-with-react-and-firebase-2/&amp;title=Amazon%20Clone%20with%20React%20and%20Firebase" target="_blank" rel="noopener"><i class="icon icon-linkedin"></i></a>
+<a class="share-item share-reddit u-hover-item" href="https://reddit.com/submit?url=https://reactjsexample.com/amazon-clone-with-react-and-firebase-2/&amp;title=Amazon%20Clone%20with%20React%20and%20Firebase" target="_blank" rel="noopener"><i class="icon icon-reddit"></i></a>
+<a class="share-item share-vk u-hover-item" href="http://vk.com/share.php?url=https://reactjsexample.com/amazon-clone-with-react-and-firebase-2/&amp;title=Amazon%20Clone%20with%20React%20and%20Firebase" target="_blank" rel="noopener"><i class="icon icon-vk"></i></a>
+</div> </div>
+</article>
+<div class="navigation">
+<div class="navigation-item navigation-previous">
+<img class="navigation-image lazyload u-object-fit" data-srcset="/content/images/2022/07/Code-2022-21-40-36.jpg 400w, /content/images/2022/07/Code-2022-21-40-36.jpg 750w, /content/images/2022/07/Code-2022-21-40-36.jpg 960w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-sizes="auto" alt="Set up a modern web app with clean architecture by running one command">
+<span class="navigation-label">Previous Post</span>
+<h4 class="navigation-title">Set up a modern web app with clean architecture by running one command</h4>
+<a class="u-permalink" href="https://reactjsexample.com/set-up-a-modern-web-app-with-clean-architecture-by-running-one-command/"></a>
+</div>
+<div class="navigation-item navigation-next">
+<img class="navigation-image lazyload u-object-fit" data-srcset="/content/images/2022/07/Code-2022-21-44-56.jpg 400w, /content/images/2022/07/Code-2022-21-44-56.jpg 750w, /content/images/2022/07/Code-2022-21-44-56.jpg 960w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-sizes="auto" alt="Apple App Built with React.js">
+<span class="navigation-label">Next Post</span>
+<h4 class="navigation-title">Apple App Built with React.js</h4>
+<a class="u-permalink" href="https://reactjsexample.com/apple-app-built-with-react-js/"></a>
+</div>
+</div>
+<section class="related-posts">
+<h3 class="related-title">
+<span class="text">You might also like...</span>
+</h3>
+<div class="post-feed">
+<article class="post tag-amazon tag-firebase u-shadow">
+<div class="post-wrapper">
+<div class="post-media">
+<div class="u-placeholder same-height rectangle">
+<a class="post-image-link" href="https://reactjsexample.com/amazon-clone-using-react-node-and-firebase/">
+<img class="post-image lazyload u-object-fit" data-srcset="/content/images/2023/04/code_2023-03-13-51-14.jpg 400w, /content/images/2023/04/code_2023-03-13-51-14.jpg 750w, /content/images/2023/04/code_2023-03-13-51-14.jpg 960w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-sizes="auto" alt="Amazon clone using React node and firebase">
+</a>
+</div>
+</div>
+<div class="post-right">
+<header class="post-header">
+<a class="post-tag" href="https://reactjsexample.com/tag/amazon/">Amazon</a>
+<h2 class="post-title">
+<a class="post-title-link" href="https://reactjsexample.com/amazon-clone-using-react-node-and-firebase/">Amazon clone using React node and firebase</a>
+</h2>
+</header>
+<div class="post-excerpt">
+Amazon clone using React node and firebase
+</div>
+<span class="post-card-tags">04 April 2023</span>
+</div>
+</div>
+</article> <article class="post tag-amazon tag-redux tag-firebase u-shadow">
+<div class="post-wrapper">
+<div class="post-media">
+<div class="u-placeholder same-height rectangle">
+<a class="post-image-link" href="https://reactjsexample.com/a-full-stack-e-commerce-website-inspired-by-the-amazon-website-built-with-react-redux-and-firebase/">
+<img class="post-image lazyload u-object-fit" data-srcset="/content/images/2022/09/Code-2022-01-16-09.jpg 400w, /content/images/2022/09/Code-2022-01-16-09.jpg 750w, /content/images/2022/09/Code-2022-01-16-09.jpg 960w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-sizes="auto" alt="A full-stack e-commerce website inspired by the amazon website. Built with React, Redux and Firebase">
+</a>
+</div>
+</div>
+<div class="post-right">
+<header class="post-header">
+<a class="post-tag" href="https://reactjsexample.com/tag/amazon/">Amazon</a>
+<h2 class="post-title">
+<a class="post-title-link" href="https://reactjsexample.com/a-full-stack-e-commerce-website-inspired-by-the-amazon-website-built-with-react-redux-and-firebase/">A full-stack e-commerce website inspired by the amazon website. Built with React, Redux and Firebase</a>
+</h2>
+</header>
+<div class="post-excerpt">
+A full-stack e-commerce website inspired by the amazon website. Built with React, Redux and Firebase
+</div>
+<span class="post-card-tags">02 September 2022</span>
+</div>
+</div>
+</article> <article class="post tag-amazon tag-firebase tag-stripe u-shadow">
+<div class="post-wrapper">
+<div class="post-media">
+<div class="u-placeholder same-height rectangle">
+<a class="post-image-link" href="https://reactjsexample.com/amazon-react-js-clone-with-firebase-and-stripe/">
+<img class="post-image lazyload u-object-fit" data-srcset="/content/images/2022/07/Code-2022-09-25-41.jpg 400w, /content/images/2022/07/Code-2022-09-25-41.jpg 750w, /content/images/2022/07/Code-2022-09-25-41.jpg 960w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-sizes="auto" alt="Amazon React.js clone with firebase and Stripe">
+</a>
+</div>
+</div>
+<div class="post-right">
+<header class="post-header">
+<a class="post-tag" href="https://reactjsexample.com/tag/amazon/">Amazon</a>
+<h2 class="post-title">
+<a class="post-title-link" href="https://reactjsexample.com/amazon-react-js-clone-with-firebase-and-stripe/">Amazon React.js clone with firebase and Stripe</a>
+</h2>
+</header>
+<div class="post-excerpt">
+Amazon React.js clone with firebase and Stripe
+</div>
+<span class="post-card-tags">10 July 2022</span>
+</div>
+</div>
+</article> </div>
+</section>
+<section class="author u-shadow">
+<section class="subscribe-form">
+<h3 class="subscribe-form-title">Subscribe to React.js Examples</h3>
+<p>Get the latest posts delivered right to your inbox</p>
+<form method="post" action="https://reactjsexample.com/subscribe/" class="">
+<input class="confirm" type="hidden" name="confirm"><input class="location" type="hidden" name="location" value="https://reactjsexample.com/amazon-clone-with-react-and-firebase-2/"><input class="referrer" type="hidden" name="referrer" value="https://www.google.com/">
+<div class="form-group">
+<input class="subscribe-email" type="email" name="email" placeholder="youremail@example.com">
+</div>
+<button class="" type="submit"><span>Subscribe</span></button>
+<script>
+    (function(g,h,o,s,t){
+        var buster = function(b,m) {
+            h[o]('input.'+b).forEach(function (i) {
+                i.value=i.value || m;
+            });
+        };
+        buster('location', g.location.href);
+        buster('referrer', h.referrer);
+    })(window,document,'querySelectorAll','value');
+</script>
+</form>
+</section>
+</section>
+</main>
+</div>
+</div>
+<div class="sidebar-column col-xl-3 col-lg-4 hidden-xs hidden-sm hidden-md" style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
+ <div class="theiaStickySidebar" style="padding-top: 0px; padding-bottom: 0px; position: static; transform: none;"><aside class="widget-area">
+ <div class="widget widget-tags u-shadow">
+<div class="gg-card2">
+
+
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-5680150941998747" data-ad-slot="9627773903"></ins>
+
+</div>
+</div>
+<div class="widget widget-tags u-shadow">
+<h4 class="widget-title">Tags</h4>
+<div class="tag-feed">
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/apps-tag/">
+<span class="tag-name">Apps</span>
+<span class="tag-count">1144</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/typescript/">
+<span class="tag-name">TypeScript</span>
+<span class="tag-count">595</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/hooks/">
+<span class="tag-name">Hooks</span>
+<span class="tag-count">368</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/nextjs/">
+<span class="tag-name">Nextjs</span>
+<span class="tag-count">364</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/website/">
+<span class="tag-name">WebSite</span>
+<span class="tag-count">333</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/ui/">
+<span class="tag-name">UI</span>
+<span class="tag-count">323</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/games/">
+<span class="tag-name">Games</span>
+<span class="tag-count">289</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/tailwind-css/">
+<span class="tag-name">Tailwind CSS</span>
+<span class="tag-count">272</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/javascript/">
+<span class="tag-name">Javascript</span>
+<span class="tag-count">252</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/redux/">
+<span class="tag-name">Redux</span>
+<span class="tag-count">217</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/images/">
+<span class="tag-name">Images</span>
+<span class="tag-count">174</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/starter/">
+<span class="tag-name">Starter</span>
+<span class="tag-count">163</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/todo/">
+<span class="tag-name">Todo</span>
+<span class="tag-count">162</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/state/">
+<span class="tag-name">State</span>
+<span class="tag-count">159</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/ecommerce/">
+<span class="tag-name">Ecommerce</span>
+<span class="tag-count">153</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/api/">
+<span class="tag-name">API</span>
+<span class="tag-count">151</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/editor/">
+<span class="tag-name">Editor</span>
+<span class="tag-count">146</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/templates/">
+<span class="tag-name">Templates</span>
+<span class="tag-count">145</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/miscellaneous/">
+<span class="tag-name">Miscellaneous</span>
+<span class="tag-count">144</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/animation/">
+<span class="tag-name">Animation</span>
+<span class="tag-count">143</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/tool/">
+<span class="tag-name">Tool</span>
+<span class="tag-count">139</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/boilerplate/">
+<span class="tag-name">Boilerplate</span>
+<span class="tag-count">137</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/chart/">
+<span class="tag-name">Chart</span>
+<span class="tag-count">135</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/form/">
+<span class="tag-name">Form</span>
+<span class="tag-count">129</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/portfolio-page/">
+<span class="tag-name">Portfolio Page</span>
+<span class="tag-count">121</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/react-native/">
+<span class="tag-name">React Native</span>
+<span class="tag-count">120</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/calendar/">
+<span class="tag-name">Calendar</span>
+<span class="tag-count">120</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/firebase/">
+<span class="tag-name">Firebase</span>
+<span class="tag-count">119</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/generator/">
+<span class="tag-name">Generator</span>
+<span class="tag-count">116</span>
+</a>
+</div>
+<div class="tag">
+<a class="tag-link" href="https://reactjsexample.com/tag/reactjs/">
+<span class="tag-name">Reactjs</span>
+<span class="tag-count">114</span>
+</a>
+</div>
+</div>
+</div> <div class="widget widget-recent u-shadow">
+<h4 class="widget-title">Recent Posts</h4>
+<div class="recent-posts">
+<article class="recent">
+<header class="post-header">
+<h5 class="post-title">
+<a class="post-title-link" href="https://reactjsexample.com/airlines-passenger-manager-built-with-react/">Airlines passenger manager built with React</a>
+</h5>
+<time class="post-date" datetime="2023-07-20">
+Jul 20, 2023
+</time></header> </article>
+<article class="recent">
+<header class="post-header">
+<h5 class="post-title">
+<a class="post-title-link" href="https://reactjsexample.com/a-simple-ecommerce-cart-application-with-react/">A Simple ecommerce cart application with React</a>
+</h5>
+<time class="post-date" datetime="2023-07-20">
+Jul 20, 2023
+</time></header> </article>
+<article class="recent">
+<header class="post-header">
+<h5 class="post-title">
+<a class="post-title-link" href="https://reactjsexample.com/react-hook-to-add-chatgpt-like-word-by-word-event-streams/">React Hook to add ChatGPT-like word-by-word event streams</a>
+</h5>
+<time class="post-date" datetime="2023-07-20">
+Jul 20, 2023
+</time></header> </article>
+<article class="recent">
+<header class="post-header">
+<h5 class="post-title">
+<a class="post-title-link" href="https://reactjsexample.com/plugin-to-load-the-react-icons-for-jsx-and-tsx-files-in-acode-app/">Plugin to load the react icons for .jsx and .tsx files in Acode app</a>
+</h5>
+<time class="post-date" datetime="2023-07-20">
+Jul 20, 2023
+</time></header> </article>
+<article class="recent">
+<header class="post-header">
+<h5 class="post-title">
+<a class="post-title-link" href="https://reactjsexample.com/a-react-events-app-to-foster-meaningful-connections-within-your-local-community/">A React events app to foster meaningful connections within your local community</a>
+</h5>
+<time class="post-date" datetime="2023-07-20">
+Jul 20, 2023
+</time></header> </article>
+</div>
+</div>
+<div class="widget widget-recent u-shadow">
+<div class="gg-card3">
+
+
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px" data-ad-client="ca-pub-5680150941998747" data-ad-slot="3460995508"></ins>
+
+</div>
+</div></aside></div></div>
+</div>
+</div>
+<link rel="stylesheet" href="./11_files/prism.css">
+</div>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-inner">
+<div class="copyright ">
+<a href="https://reactjsexample.com/about/">About</a>&nbsp; | &nbsp;<a href="https://reactjsexample.com/contact/">Contact</a>&nbsp; | &nbsp;<a href="https://reactjsexample.com/privacy-policy/">Privacy Policy</a>&nbsp; | &nbsp;<a href="https://reactjsexample.com/submit-project/">Submit A Project</a>
+</div>
+<div class="social">
+</div>
+<div class="copyright">
+Powered by <a href="https://reactjsexample.com/" target="_blank">React.js Examples</a>
+</div>
+</div>
+</div>
+</footer></div>
+<script src="./11_files/jquery-3.2.1.min.js.download"></script>
+<script src="./11_files/jquery.githubRepoWidget.min.js.download"></script>
+<script src="./11_files/main.min.js.download"></script>
+<script type="text/javascript" src="./11_files/prism.js.download"></script>
+<script src="./11_files/nav.js.download"></script>
+<script data-isso="https://reactjsexample.com/comment" src="./11_files/embed.min.js.download" data-isso-gravatar="true" data-isso-require-author="true" data-isso-require-email="true" data-isso-avatar="false"></script>
+<script type="text/javascript">
+var links = document.querySelectorAll("a");
+for (var i = 0; i < links.length; i++) {
+    if (links[i].hostname != window.location.hostname) {
+        links[i].target = "_blank";
+        links[i].rel = "noopener";
+    }
+}
+</script>
+<script async="" src="./11_files/script.js.download" data-website-id="171a8a39-e316-4c11-a3d3-30a623373e1d"></script>
+<script defer="" data-domain="reactjsexample.com" src="./11_files/plausible.js.download"></script>
+
+</body></html>
